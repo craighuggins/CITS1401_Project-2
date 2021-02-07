@@ -11,3 +11,19 @@ Running the program:
   - 'textfile1' and 'textfile2' are the names of the text files to be analysed (input as strings in quotations)
   - 'feature' is the type of feature that will be used to compare the document profiles.
       - The allowed features are: "punctuation", "unigrams", "conjunctions" and "composite"
+
+Output:
+- the score from a pairwise comparison round to four decimal places
+- the dictionary containing the profile of first file (textfile1)
+- the dictionary containing the profile of second file (textfile2)
+
+
+Features:
+- conjunctions: counts the number of occurances of the following words...
+  - "also", "although", "and", "as", "because", "before", "but", "for", "if", "nor", "of", "or", "since", "that", "though", "until", "when", "whenever", "whereas", "which", "while", "yet"
+- unigrams: counts the number of occurances of each word in the files
+- punctuation: counts certain pieces of punctuation
+- composite: contains the number of occurences of punctuations and conjunctions. In addition, counts the average number of words per sentence, and the average number of sentences per paragraph
+
+Testing files:
+- the project2data.zip file contains some sample text files
